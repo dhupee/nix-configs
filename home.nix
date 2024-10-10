@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
   imports = [
     ./modules/zsh.nix
   ];
@@ -29,7 +28,6 @@
     gh
     helix
     zsh-powerlevel10k
-
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
