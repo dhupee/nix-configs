@@ -5,9 +5,11 @@
   environment.packages = with pkgs; [
     # User-facing stuff that you really really want to have
     # Make sure its CLI only
+    # Check the modules to prevent duplicate installs
     bat
     fastfetch
     git
+    lazygit
     man
     nano
     tldr
@@ -33,6 +35,7 @@
 
     ".p10k.zsh".source = ./config/p10k.zsh;
     ".aliases".source = ./aliases;
+    ".tmate.conf".source = ./config/tmate.conf;
     };
   };
 
