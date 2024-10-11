@@ -19,6 +19,8 @@
 
   home-manager.config = {
 
+    home.stateVersion = "24.05";
+
     imports = [
      ./modules/zsh.nix
     ];
