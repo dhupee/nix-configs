@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-
   # Simply install just the packages
   environment.packages = with pkgs; [
     # User-facing stuff that you really really want to have
@@ -17,10 +16,13 @@
     yt-dlp
   ];
 
-  home-manager.config = {
 
+  # Home-manager specific configuration
+  home-manager.config = {
+    # Don't change this willy nilly
     home.stateVersion = "24.05";
 
+    # Importing any modules from Home.nix goes through here
     imports = [
      ./modules/zsh.nix
     ];
@@ -37,8 +39,10 @@
   # Backup etc files instead of failing to activate generation if a file already exists in /etc
   environment.etcBackupExtension = ".bak";
 
+  # Android/Termux specific configuration
   android-integration = {
-    termux-setup-storage.enable = true; 
+    # to make sure I have access to phone's storage system
+    termux-setup-storage.enable = true;
   };
 
   # Read the changelog before changing this value
@@ -50,5 +54,5 @@
   '';
 
   # Set your time zone
-  #time.timeZone = "Europe/Berlin";
+  time.timeZone = "Asia/Jakarta";
 }
