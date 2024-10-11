@@ -14,6 +14,7 @@
     nano
     tldr
     tmate
+    toybox
     vim
     yt-dlp
   ];
