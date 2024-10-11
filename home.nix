@@ -55,7 +55,7 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    
+
     ".p10k.zsh".source = ./config/p10k.zsh;
     ".aliases".source = ./aliases;
   };
