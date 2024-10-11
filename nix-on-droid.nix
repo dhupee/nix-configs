@@ -1,9 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  # imports = [
-  #   ./modules/zsh.nix
-  # ];
 
   # Simply install just the packages
   environment.packages = with pkgs; [
@@ -21,6 +18,11 @@
   ];
 
   home-manager.config = {
+
+    imports = [
+     ./modules/zsh.nix
+    ];
+
     home.file = {
     # Symlink config files you want, example:
     # ".screenrc".source = dotfiles/screenrc;
