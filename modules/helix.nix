@@ -3,7 +3,7 @@
 {
 
   programs.helix = {
-    enabled = true;
+    enable = true;
     # extraPackages = [];
   };
 }
