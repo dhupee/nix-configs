@@ -1,0 +1,15 @@
+# dhupee's configuration for alacritty
+# https://github.com/dhupee/dotfiles
+
+import = [".config/alacritty/dracula.toml"]
+
+[scrolling]
+
+history = 10000
+
+
+[font]
+
+normal = {family = "Hack Nerd Font", style = "Regular"}
+
+size = 11 
