@@ -2,10 +2,9 @@
 
 {
 
-    environment.systemPackages = with pkgs; [
-
+    home.packages = with pkgs; [
       nerdfonts
-  ];
+    ];
 
     programs.zsh = {
         enable = true;
