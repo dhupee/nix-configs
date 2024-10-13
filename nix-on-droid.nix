@@ -7,6 +7,7 @@
     # Make sure its CLI only
     # Check the modules to prevent duplicate installs
     bat
+    coreutils
     curl
     # corefonts
     fastfetch
@@ -17,7 +18,7 @@
     nano
     tldr
     tmate
-    toybox
+    # toybox
     vim
     wget
     yt-dlp
