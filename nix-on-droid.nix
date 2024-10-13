@@ -7,6 +7,7 @@
     # Make sure its CLI only
     # Check the modules to prevent duplicate installs
     bat
+    # corefonts
     fastfetch
     git
     lazygit
