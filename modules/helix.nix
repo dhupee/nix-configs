@@ -5,5 +5,5 @@
   programs.helix = {
     enabled = true;
     # extraPackages = [];
-  }
+  };
 }
