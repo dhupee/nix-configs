@@ -39,7 +39,7 @@
     # Symlink config files you want, example:
     # ".screenrc".source = dotfiles/screenrc;
 
-    # ".p10k.zsh".source = ./config/p10k.zsh;
+    ".p10k.zsh".source = ./config/p10k.zsh;
     ".aliases".source = ./aliases;
     ".tmate.conf".source = ./config/tmate.conf;
     };
