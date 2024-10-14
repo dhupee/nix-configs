@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nix-on-droid, home-manager }: 
+  outputs = { self, nixpkgs, nix-on-droid, home-manager }:
     let
       system = "x86_64-linux"; # Adjust this if you are using a different architecture
       pkgs = nixpkgs.legacyPackages.${system};
