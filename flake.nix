@@ -32,9 +32,9 @@
 
     # NixOS configuration
     nixosConfigurations = {
-      nixos = lib.nixosSystem {
+      nitro = lib.nixosSystem {
         inherit system;
-        modules = [ ./configuration.nix ];
+        modules = [ ./desktop/nitro/configuration.nix ];
       };
     };
 
@@ -42,7 +42,7 @@
     homeConfigurations = {
       dhupee = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ];
+        modules = [ ./home/dhupee.nix ];
       };
     };
   };
