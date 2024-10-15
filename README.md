@@ -39,5 +39,5 @@ TBA
 
 ## To-Do List
 
-[] Make a command and control like for managing nix, built in go, name Yuki
-[] Either specific nix for centralized configuration, or maybe on the flake
+- [ ] Make a command and control like for managing nix, built in go, name Yuki
+- [ ] Either specific nix for centralized configuration, or maybe on the flake
