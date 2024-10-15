@@ -49,7 +49,6 @@
       enable = true;
       package = pkgs.oh-my-posh;
       enableZshIntegration = true;
-      settings = $XDG_CONFIG_HOME/oh-my-posh/base.json
     };
   };
 }
