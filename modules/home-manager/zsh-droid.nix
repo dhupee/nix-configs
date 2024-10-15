@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
     # supporting packages needed for zsh
     # home.packages = with pkgs; [
     #   hack-font
@@ -10,7 +9,7 @@
     programs = {
       zsh = {
         enable = true;
-        enableCompletion = false;
+        enableCompletion = false; # make sure it uses the zsh-autocomplete instead
         initExtra = ''
 
           source ${pkgs.zsh-autocomplete}/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -28,10 +27,8 @@
             fi
 
             '';
-        # initExtra = "source ~/.p10k.zsh";
         oh-my-zsh = {
             enable = true;
-            # theme = "robbyrussell";
             plugins = [
                 "thefuck"
                 "copypath"
@@ -52,12 +49,12 @@
       };
     };
 
-
+    # use oh-my-posh instead for the prompt
     oh-my-posh = {
       enable = true;
       package = pkgs.oh-my-posh;
       enableZshIntegration = true;
-      useTheme = "onehalf.minimal";
+      useTheme = "onehalf.minimal"; # minimal theme dont need nerd font
     };
   };
 }

@@ -1,17 +1,20 @@
 { config, pkgs, ... }:
 
 {
+    # supporting packages needed for zsh
+    # home.packages = with pkgs; [
+    #   hack-font
+    # ];
 
-    home.packages = with pkgs; [
-      hack-font
-    ];
-
-    programs.zsh = {
+    programs = {
+      zsh = {
         enable = true;
+        enableCompletion = false; # make sure it uses the zsh-autocomplete instead
         initExtra = ''
-            source ~/.p10k.zsh
 
-            # Sourcing aliases
+          source ${pkgs.zsh-autocomplete}/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+          # Sourcing aliases
             if [ -d ~/.aliases/ ]; then
                 # Loop through all .sh files in the aliases directory and source them
                 for file in ~/.aliases/*.sh; do
@@ -23,15 +26,9 @@
                 echo "Aliases directory not found"
             fi
 
-
-            source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-
             '';
-        # initExtra = "source ~/.p10k.zsh";
         oh-my-zsh = {
             enable = true;
-            # theme = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
-            # theme = "robbyrussell";
             plugins = [
                 "thefuck"
                 "copypath"
@@ -47,5 +44,17 @@
                 "zoxide"
             ];
         };
+      syntaxHighlighting = {
+        enable = true;
+      };
     };
+
+    # use oh-my-posh instead for the prompt
+    oh-my-posh = {
+      enable = true;
+      package = pkgs.oh-my-posh;
+      enableZshIntegration = true;
+      useTheme = "onehalf.minimal"; # minimal theme dont need nerd font
+    };
+  };
 }
