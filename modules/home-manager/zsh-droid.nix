@@ -3,9 +3,9 @@
 {
 
     # supporting packages needed for zsh
-    home.packages = with pkgs; [
-      hack-font
-    ];
+    # home.packages = with pkgs; [
+    #   hack-font
+    # ];
 
     programs = {
       zsh = {
