@@ -32,17 +32,18 @@
 
     # Importing any modules from Home.nix goes through here
     imports = [ # has issue for being bit heavy, dont used it for now
-     ./modules/zsh.nix
-     ./modules/helix.nix
+      ../modules/zsh-droid.nix
+      ../modules/helix.nix
     ];
 
     home.file = {
     # Symlink config files you want, example:
     # ".screenrc".source = dotfiles/screenrc;
 
-    ".p10k.zsh".source = ./config/p10k.zsh;
-    ".aliases".source = ./aliases;
-    ".tmate.conf".source = ./config/tmate.conf;
+    # ".p10k.zsh".source = ../config/p10k.zsh;
+    ".config/ohmyposh".source = ../config/ohmyposh-droid;
+    ".aliases".source = ../aliases;
+    ".tmate.conf".source = ../config/tmate.conf;
     };
   };
 
