@@ -7,22 +7,21 @@
     # Make sure its CLI only
     # Check the modules to prevent duplicate installs
     bat
-    # coreutils
     curl
-    # corefonts
     fastfetch
     fzf
     git
+    grep
     lazygit
     man
     nano
     ncurses
     tldr
     tmate
-    # toybox
     vim
     wget
     yt-dlp
+    zoxide
   ];
 
 
