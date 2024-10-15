@@ -49,7 +49,7 @@
       enable = true;
       package = pkgs.oh-my-posh;
       enableZshIntegration = true;
-      themes = "onehalf.minimal";
+      useTheme = "onehalf.minimal";
     };
   };
 }
