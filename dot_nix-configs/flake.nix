@@ -1,5 +1,5 @@
 {
-  description = "Combined Nix-on-Droid and Home Manager config.";
+  description = "Dhupee's Nix configuration for NixOS and Android.";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
