@@ -16,9 +16,9 @@ alias c="clear"
 
 # # Helix
 # alias hx="helix"
-# hxf() {
-#     helix $(fzf)
-# }
+hxf() {
+    hx $(fzf)
+}
 
 # Copying Tmux.conf to tmate.conf
 alias tmux2tmate="cp ~/.tmux.conf ~/.tmate.conf"
@@ -124,6 +124,3 @@ function delete_latest_history() {
     echo "Deleting last $count shell history entries"
     fc -p -1 | tail -n $count | awk "{print $1}" | xargs -I {} fc -d {}
 }
-
-# symlink the fonts directory on dotfile git repo to home
-alias fonts-symlink-init="ln -s $HOME/.local/share/chezmoi/dot_fonts $HOME/.fonts"
