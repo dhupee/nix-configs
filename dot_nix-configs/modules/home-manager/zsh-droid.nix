@@ -42,7 +42,7 @@
       syntaxHighlighting = {
         enable = true;
       };
-      autosuggestions = {
+      autosuggestion = {
         enable = true;
       };
     };
