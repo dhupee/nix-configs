@@ -16,6 +16,7 @@
     man
     nano
     ncurses
+    thefuck
     tldr
     tmate
     vim
@@ -42,6 +43,7 @@
 
     # ".p10k.zsh".source = ../config/p10k.zsh;
     ".config/ohmyposh".source = ../config/ohmyposh-droid;
+    ".config/helix".source = ../config/helix;
     ".aliases".source = ../aliases;
     ".tmate.conf".source = ../config/tmate.conf;
     };
