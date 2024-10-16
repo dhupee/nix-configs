@@ -14,11 +14,11 @@ alias c="clear"
 # Tmux 256 colors
 # alias tmux='TERM=screen-256color tmux'
 
-# Helix
-alias hx="helix"
-hxf() {
-    helix $(fzf)
-}
+# # Helix
+# alias hx="helix"
+# hxf() {
+#     helix $(fzf)
+# }
 
 # Copying Tmux.conf to tmate.conf
 alias tmux2tmate="cp ~/.tmux.conf ~/.tmate.conf"
