@@ -36,6 +36,10 @@
         inherit system;
         modules = [ ./desktop/nitro/configuration.nix ];
       };
+      virts = lib.nixosSystem {
+        inherit system;
+        modules = [ ./desktop/virts/configuration.nix ];
+      };
     };
 
     # Home Manager configuration
