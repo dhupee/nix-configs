@@ -37,6 +37,7 @@
     imports = [ # has issue for being bit heavy, dont used it for now
       ../modules/home-manager/zsh-droid.nix
       ../modules/home-manager/helix.nix
+      ../modules/home-manager/neovim.nix
     ];
 
     home.file = {
