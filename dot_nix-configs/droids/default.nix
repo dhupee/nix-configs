@@ -21,6 +21,7 @@
     thefuck
     tldr
     tmate
+    tree
     vim
     wget
     yt-dlp
