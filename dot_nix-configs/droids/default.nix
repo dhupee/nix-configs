@@ -12,8 +12,6 @@
     dust
     fastfetch
     fzf
-    git
-    gh
     gnugrep
     lazygit
     man
@@ -41,6 +39,8 @@
       ../modules/home-manager/starship-droid.nix
       ../modules/home-manager/helix.nix
       ../modules/home-manager/neovim.nix
+      ../modules/home-manager/git.nix
+      ../modules/home-manager/gh.nix
     ];
 
     home.file = {
