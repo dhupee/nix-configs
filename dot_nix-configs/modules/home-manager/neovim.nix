@@ -1,4 +1,4 @@
-{ pkgs, ...}:
+{ pkgs, pkgs-unstable, ...}:
 
 {
   programs.neovim = {
