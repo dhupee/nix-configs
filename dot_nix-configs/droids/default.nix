@@ -13,6 +13,7 @@
     fastfetch
     fzf
     git
+    gh
     gnugrep
     lazygit
     man
