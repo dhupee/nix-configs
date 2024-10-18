@@ -1,15 +1,12 @@
 { config, pkgs, ... }:
 
 {
-    # supporting packages needed for zsh
-    # home.packages = with pkgs; [
-    #   hack-font
-    # ];
-
     programs = {
       zsh = {
         enable = true;
         enableCompletion = false; # make sure it uses the zsh-autocomplete instead
+        syntaxHighlighting.enable = true;
+        historySubstringSearch.enable = true;
         initExtra = ''
 
           source ${pkgs.zsh-autocomplete}/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -44,17 +41,6 @@
                 "zoxide"
             ];
         };
-      syntaxHighlighting = {
-        enable = true;
-      };
-    };
-
-    # use oh-my-posh instead for the prompt
-    oh-my-posh = {
-      enable = true;
-      package = pkgs.oh-my-posh;
-      enableZshIntegration = true;
-      useTheme = "onehalf.minimal"; # minimal theme dont need nerd font
     };
   };
 }
