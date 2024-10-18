@@ -29,7 +29,7 @@
       default = nix-on-droid.lib.nixOnDroidConfiguration {
         pkgs = import nixpkgs { system = "aarch64-linux"; };
         modules = [ ./droids/default.nix ];
-        specialArgs = {
+        extraSpecialArgs = {
           pkgs-unstable = import nixpkgs-unstable { system = "aarch64-linux"; };
         };
       };
@@ -40,14 +40,14 @@
       nitro = lib.nixosSystem {
         inherit system;
         modules = [ ./desktop/nitro/configuration.nix ];
-        specialArgs = {
+        extraSpecialArgs = {
           inherit pkgs-unstable;
         };
       };
       virts = lib.nixosSystem {
         inherit system;
         modules = [ ./desktop/virts/configuration.nix ];
-        specialArgs = {
+        extraSpecialArgs = {
           inherit pkgs-unstable;
           };
       };
